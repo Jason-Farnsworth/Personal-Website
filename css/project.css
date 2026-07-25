@@ -25,7 +25,8 @@ body{
     justify-content: flex-start;
 }
 .acct-button-row{
-    display: flex;
+    /*display: flex;*/
+    display: inline-flex;
     justify-content: center;   /* Centers the buttons horizontally */
     align-items: center;
     gap: 20px;                 /* Space between buttons */
@@ -34,25 +35,33 @@ body{
     margin-right: auto;
 }
 .portfolio-button-row{
-    display: flex;
+    /*display: flex;*/
+    display: inline-flex;
     justify-content: center;   /* Centers the buttons horizontally */
     align-items: center;
     gap: 20px;                 /* Space between buttons */
     margin: 0;
-    margin-left: auto;
-    margin-right: auto;
+    /*width: 100%;*/
 }
 .acct-button-row img{
-    width: auto;
-    max-width: 80%;
+    /*width: auto;*/
+    width: 275px;
+    max-width: 100%;
     height: auto;
-    max-height: 80%;
+    /*max-height: 80%;*/
+    display: block;
 
 }
 .portfolio-button-row img{
     width: 300px;
     max-width: 100%;
     height: auto;
+    display: block;
+}
+.acct-button-row a,
+.portfolio-button-row a{
+    display: inline-block;
+    line-height: 0;
 }
 .name{
     /*font-size: 80px;*/
@@ -91,6 +100,13 @@ article{
     padding-bottom: 2em;
     /*display: block;*/
 }
+/*For the article tages on phones*/
+/*@media (max-width: 768px){
+    article{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}*/
 
 .center{
     text-align: center;
@@ -137,20 +153,41 @@ summary{
     /*float: right*/
 }
 .left-image{
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;
     display: block;
     margin-left: 0;
     margin-right: auto;
     /*width: auto;
-    max-width: 80%;*/
+    max-width: 80%;
     width: 70%;
     min-width: 400px;
     max-width: 2000px;
     height: auto;
-    max-height: 80%;
+    max-height: 80%;*/
+    width: 750px;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
+/* For the images in blogs on phones 
+@media (max-width: 768px){
+    .left-image{
+        width: 95%;
+        height: auto;
+        display: block;
+        border: 5px solid red;
+    }
+}*/
 footer{
     text-align: center;
+}
+figure{
+    margin: 20px 0;
+    text-align: left;
+}
+.left-figure{
+    margin: 20px 0;
+    text-align: left;
 }
 
 /*CSS Code for Search Bar*/
