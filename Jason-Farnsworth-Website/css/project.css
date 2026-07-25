@@ -1,0 +1,191 @@
+body{
+    /*background-image: url(../images/floral.jpg);*/
+    background-color: rgb(112, 179, 255);
+    color: black;
+    font-family: "times-new-roman" /*"sans-serif", "comic-sans", "arial"*/
+}
+.head img{
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+    display: block;
+}
+.header{
+    display: flex;
+    align-items: top;   /* Aligns the top of the text with the top of the image */
+    gap: 20px;                 /* Space between image and name */
+    padding: 20px;
+    max-width: 1500px;
+    width: auto;
+    height: auto;
+}
+.header-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.acct-button-row{
+    display: flex;
+    justify-content: center;   /* Centers the buttons horizontally */
+    align-items: center;
+    gap: 20px;                 /* Space between buttons */
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.portfolio-button-row{
+    display: flex;
+    justify-content: center;   /* Centers the buttons horizontally */
+    align-items: center;
+    gap: 20px;                 /* Space between buttons */
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.acct-button-row img{
+    width: auto;
+    max-width: 80%;
+    height: auto;
+    max-height: 80%;
+
+}
+.portfolio-button-row img{
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+.name{
+    /*font-size: 80px;*/
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+}
+.tagline{
+    font-size: clamp(2.5rem, 2vw, 3rem);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.nav{
+    padding-left: 10%;
+    /*display: block;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 190px;
+}
+
+#bg{
+    background-color: rgb(112, 179, 255);
+    max-width: 1200px;
+    width: 90%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: clamp(2rem, 2vw, 1.5rem);
+}
+article{
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    /*display: block;*/
+}
+
+.center{
+    text-align: center;
+}
+.project{
+    width: 500px;
+    text-align: center;
+}
+.hori-proj{
+    width: 600px;
+}
+.return{
+    width: auto;
+    max-width: 40%;
+    height: auto;
+    max-height: 40%;
+}
+summary{
+    font-size: clamp(3rem, 3vw, 3.5rem);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.project img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.project p{
+    margin-top: 10px;
+}
+
+.img{
+    /*padding-left: 25%;*/
+    padding-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 80%;
+    height: auto;
+    max-height: 80%;
+    /*float: right*/
+}
+.left-image{
+    padding-bottom: 10px;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    /*width: auto;
+    max-width: 80%;*/
+    width: 70%;
+    min-width: 400px;
+    max-width: 2000px;
+    height: auto;
+    max-height: 80%;
+}
+footer{
+    text-align: center;
+}
+
+/*CSS Code for Search Bar*/
+.search-container{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+#searchBar{
+    width: min(400px, 80%);
+    padding: 12px 16px;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    border: 3px solid #000000;
+    border-radius: 8px;
+    outline: none;
+}
+
+/*#searchBar:focus{
+    border-color: #4a90e2;
+}*/
+
+.blog-post{
+    opacity: 1;
+    max-height: 2000px;
+    transition:
+        opacity .3s ease,
+        max-height .3s ease,
+        margin .3s ease,
+        padding .3s ease;
+}
+
+.blog-post.hidden{
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+} /*Makes the filtered out articles fade away instead of instantly disappearing

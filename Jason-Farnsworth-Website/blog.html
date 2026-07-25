@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jason Farnsworth's Website</title>
+    <link rel="icon" type="image/x-icon" href="images/Card_New.png">
+</head>
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <div id="bg">
+        <header>
+                <a href="index.html"><img class="return" src="images/return.png" alt="Return Button"></a>
+                <h1 class="center">My Personal Blog</h1>
+                <p class="center">This is where I will write about things that interest me, whether they are written for the purpose of education or entertainment. New blog entries will be written every week or two.<br>Use the Search Bar to find specific articles.</p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search blog posts..."> <!--Search Bar code-->
+        </div>
+
+
+        <div id="blog-posts">
+            <article class="blog-post">
+                <a href="crystal_bosses.html"><h2>Deltarune's Crystal Bosses Ranked</h2></a>
+                <h3>Written on July 23rd, 2026</h3>
+                <p>My ranking of the Deltarune Crystal Bosses based on difficulty and my favorability. Also includes random trivia about the crystal bosses.</p>
+            </article>
+
+            <article class="blog-post">
+                <a href="kentucky_kingdom.html"><h2>My Experience at Kentucky Kingdom</h2></a>
+                <h3>Written on July 18th, 2026</h3>
+                <p>My thoughts on the different coasters and attractions at Kentucky Kingdom.</p>
+            </article>
+        </div>
+    </div>
+    <!--Javascript code to make Search Bar actually search for articles-->
+    <script>
+        const searchBar = document.getElementById("searchBar");
+        const posts = document.querySelectorAll(".blog-post");
+
+        searchBar.addEventListener("keyup", function () {
+
+            const searchText = searchBar.value.toLowerCase();
+
+            posts.forEach(post => {
+
+                const text = post.textContent.toLowerCase();
+
+                /*if(text.includes(searchText)){
+                    post.style.display = "";
+                }
+                else{
+                    post.style.display = "none";
+                }*/
+                if (text.includes(searchText)) {
+
+                    // Show the post
+                    post.style.display = "";
+
+                    // Wait one frame so the browser registers the display change
+                    requestAnimationFrame(() => {
+                        post.classList.remove("hidden");
+                    });
+
+                } else {
+
+                    // Fade it out
+                    post.classList.add("hidden");
+
+                    // After the fade finishes, remove it from the layout
+                    setTimeout(() => {
+                        if (post.classList.contains("hidden")) {
+                            post.style.display = "none";
+                        }
+                    }, 300); // 300ms matches the CSS transition
+                }
+
+            });
+
+        });
+    </script>
+</body>
+</html>
