@@ -2,7 +2,8 @@ body{
     /*background-image: url(../images/floral.jpg);*/
     background-color: rgb(112, 179, 255);
     color: black;
-    font-family: "times-new-roman" /*"sans-serif", "comic-sans", "arial"*/
+    font-family: "times-new-roman"; /*"sans-serif", "comic-sans", "arial"*/
+    font-size: 24px;
 }
 .head img{
     max-width: 100%;
@@ -71,11 +72,14 @@ body{
     text-align: center;
 }
 .tagline{
-    font-size: clamp(2.5rem, 2vw, 3rem);
+    font-size: clamp(1.7rem, 2vw, 2rem);
     margin-top: 10px;
     text-align: center;
 }
-
+.blog-line{
+    font-size: 20px;
+    color: #3d3d3d;
+}
 .nav{
     padding-left: 10%;
     /*display: block;*/
@@ -92,7 +96,7 @@ body{
     margin: 0;
     margin-left: auto;
     margin-right: auto;
-    font-size: clamp(2rem, 2vw, 1.5rem);
+    /*font-size: clamp(2rem, 2vw, 1.5rem);*/
 }
 article{
     padding-left: 2em;
@@ -100,11 +104,21 @@ article{
     padding-bottom: 2em;
     /*display: block;*/
 }
+h1{
+    font-size: 3rem;
+}
+
+h2, 
+h3{
+    font-size: 2rem;
+}
+article p{
+    font-size: 1em;
+}
 /*For the article tages on phones*/
 /*@media (max-width: 768px){
-    article{
-        padding-left: 1em;
-        padding-right: 1em;
+    article p{
+        font-size: 1em;
     }
 }*/
 
@@ -125,7 +139,7 @@ article{
     max-height: 40%;
 }
 summary{
-    font-size: clamp(3rem, 3vw, 3.5rem);
+    font-size: clamp(2rem, 3vw, 3rem);
     font-weight: bold;
     text-align: center;
     padding: 10px 0;
