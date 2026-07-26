@@ -125,12 +125,35 @@ article p{
 .center{
     text-align: center;
 }
+.project-row{
+    display: flex;
+    /*display: inline-flex;*/
+    justify-content: center;   /* Centers the buttons horizontally */
+    align-items: center;
+    gap: 20px;                 /* Space between buttons */
+    /*margin: 0;
+    width: 100%;*/
+}
+@media (max-width: 768px){
+    .project-row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project{
+        width: 90%;
+        max-width: 600px;
+    }
+}
 .project{
     width: 500px;
+    /*max-width: 100%;*/
     text-align: center;
 }
 .hori-proj{
-    width: 600px;
+    width: 500px;
+    /*max-width: 100%;*/
+    text-align: center;
 }
 .return{
     width: auto;
@@ -147,8 +170,9 @@ summary{
 }
 .project img{
     width: 100%;
+    /*max-width: 100%;*/
     height: auto;
-    display: block;
+    /*display: block;*/
 }
 .project p{
     margin-top: 10px;
@@ -240,3 +264,31 @@ figure{
     margin: 0;
     padding: 0;
 } /*Makes the filtered out articles fade away instead of instantly disappearing
+
+/* CSS Code for Email Popup */
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,.3);
+    display: none;
+    z-index: 1000;
+    text-align: center;
+}
+
+.popup.show{
+    display: block;
+}
+
+.popup-button{
+    display: flex;
+    /*justify-content: center;*/ /*Centers buttons horizontally*/
+    flex-direction: column; /*This and the next line stacks the buttons*/
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}

@@ -37,50 +37,6 @@
         </div>
     </div>
     <!--Javascript code to make Search Bar actually search for articles-->
-    <script>
-        const searchBar = document.getElementById("searchBar");
-        const posts = document.querySelectorAll(".blog-post");
-
-        searchBar.addEventListener("keyup", function () {
-
-            const searchText = searchBar.value.toLowerCase();
-
-            posts.forEach(post => {
-
-                const text = post.textContent.toLowerCase();
-
-                /*if(text.includes(searchText)){
-                    post.style.display = "";
-                }
-                else{
-                    post.style.display = "none";
-                }*/
-                if (text.includes(searchText)) {
-
-                    // Show the post
-                    post.style.display = "";
-
-                    // Wait one frame so the browser registers the display change
-                    requestAnimationFrame(() => {
-                        post.classList.remove("hidden");
-                    });
-
-                } else {
-
-                    // Fade it out
-                    post.classList.add("hidden");
-
-                    // After the fade finishes, remove it from the layout
-                    setTimeout(() => {
-                        if (post.classList.contains("hidden")) {
-                            post.style.display = "none";
-                        }
-                    }, 300); // 300ms matches the CSS transition
-                }
-
-            });
-
-        });
-    </script>
+    <script src="js/project.js"></script>
 </body>
 </html>
