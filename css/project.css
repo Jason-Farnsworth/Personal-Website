@@ -135,6 +135,10 @@ article p{
     width: 100%;*/
 }
 @media (max-width: 768px){
+    body{
+        background: red;
+    }
+    
     .project-row{
         flex-direction: column;
         align-items: center;
