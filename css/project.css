@@ -115,12 +115,65 @@ h3{
 article p{
     font-size: 1em;
 }
-/*For the article tages on phones*/
-/*@media (max-width: 768px){
-    article p{
-        font-size: 1em;
+/*For text size on phones*/
+@media (max-width: 768px){
+    body{
+        /*background-image: url(../images/floral.jpg);*/
+        background-color: rgb(112, 179, 255);
+        color: black;
+        font-family: "times-new-roman"; /*"sans-serif", "comic-sans", "arial"*/
+        font-size: 16px;
     }
-}*/
+    .name{
+        /*font-size: 80px;*/
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        text-align: center;
+    }
+    .tagline{
+        font-size: clamp(1.2rem, 3vw, 2rem);
+        margin-top: 10px;
+        text-align: center;
+    }
+    .blog-line{
+        font-size: 12px;
+        color: #3d3d3d;
+    }
+    article p{
+        font-size: clamp(1rem, 2vw, 2rem);
+        padding-left: .5em;
+        padding-right: .5em;
+        padding-bottom: .5em;
+    }
+    h1{
+    font-size: 2rem;
+    }
+
+    h2, 
+    h3{
+        font-size: 1.5rem;
+    }
+    .acct-button-row{
+    /*display: flex;*/
+    display: inline-flex;
+    justify-content: center;   /* Centers the buttons horizontally */
+    align-items: center;
+    gap: 10px;                 /* Space between buttons */
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .portfolio-button-row{
+    /*display: flex;*/
+    display: inline-flex;
+    justify-content: center;   /* Centers the buttons horizontally */
+    align-items: center;
+    gap: 10px;                 /* Space between buttons */
+    margin: 0;
+    /*width: 100%;*/
+    }
+}
 
 .center{
     text-align: center;
@@ -133,17 +186,6 @@ article p{
     gap: 20px;                 /* Space between buttons */
     /*margin: 0;
     width: 100%;*/
-}
-@media (max-width: 768px){
-    .project-row{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project{
-        width: 90%;
-        max-width: 600px;
-    }
 }
 .project{
     width: 500px;
@@ -207,15 +249,74 @@ summary{
     height: auto;
     display: block;
 }
-/* For the images in blogs on phones 
+/* For the images in blogs on phones */
 @media (max-width: 768px){
     .left-image{
-        width: 95%;
+        width: 100%;
         height: auto;
         display: block;
-        border: 5px solid red;
+        padding-left: .5em;
+        padding-right: .5em;
+        padding-bottom: 1em;
     }
-}*/
+    .project-row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project{
+        width: 90%;
+        max-width: 600px;
+        padding-left: .5em;
+        padding-right: .5em;
+        padding-bottom: .5em;
+    }
+    .project{
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+    .hori-proj{
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+    .return{
+        width: auto;
+        max-width: 40%;
+        height: auto;
+        max-height: 40%;
+    }
+    summary{
+        font-size: clamp(2rem, 3vw, 3rem);
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+    .project img{
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        /*display: block;*/
+    }
+    .project p{
+        margin-top: 10px;
+    }
+
+    .img{
+        /*padding-left: 25%;*/
+        padding-bottom: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        max-width: 80%;
+        height: auto;
+        max-height: 80%;
+        /*float: right*/
+    }
+}
 footer{
     text-align: center;
 }
