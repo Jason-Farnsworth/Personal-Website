@@ -5,6 +5,12 @@ body{
     font-family: "times-new-roman"; /*"sans-serif", "comic-sans", "arial"*/
     font-size: 24px;
 }
+html {
+    scroll-behavior: smooth;
+}
+.figcaption{
+    color: #3d3d3d
+}
 .head img{
     max-width: 100%;
     width: 250px;
