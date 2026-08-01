@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     initializeEmailPopup();
     initializeBlogSearch();
+    initializeTagSearch();
 
 });
 
@@ -81,3 +82,17 @@ function initializeBlogSearch(){
             });
     });
 }};
+
+function initializeTagSearch(){
+    const tagButtons = document.querySelectorAll(".tag");
+
+    tagButtons.forEach(button => {
+        button.addEventListener("click", () => {
+
+            searchBar.value = button.textContent;
+
+            searchBar.dispatchEvent(new Event("keyup"));
+
+        });
+    });
+}

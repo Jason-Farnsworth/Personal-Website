@@ -295,6 +295,19 @@ figure{
     margin-top: 20px;
 }
 
+.tag{
+    background: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 12px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.tag:hover{
+    background: #a601ff;
+}
+
 /*Code for mobile optimization*/
 /* For the images in blogs on phones */
 /*For text size on phones*/
