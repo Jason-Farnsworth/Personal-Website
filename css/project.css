@@ -200,7 +200,7 @@ summary{
     max-height: 80%;
     /*float: right*/
 }
-.left-image{
+.left-image, video{
     /*padding-bottom: 10px;
     display: block;
     margin-left: 0;
@@ -217,6 +217,7 @@ summary{
     height: auto;
     display: block;
 }
+
 
 footer{
     text-align: center;
@@ -380,7 +381,7 @@ figure{
         margin: 0;
         /*width: 100%;*/
     }
-    .left-image{
+    .left-image, video{
         width: 100%;
         height: auto;
         display: block;
