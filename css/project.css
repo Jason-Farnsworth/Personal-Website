@@ -218,6 +218,14 @@ summary{
     display: block;
 }
 
+.octopath-image {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
 
 footer{
     text-align: center;
