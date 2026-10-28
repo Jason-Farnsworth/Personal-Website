@@ -3,57 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Jason Farnsworth's Website</title>
-    <link rel="stylesheet" type="text/css" href="css/project.css?v=2">
-    <link rel="icon" type="image/x-icon" href="images/Card_New.png">
+    <link rel="stylesheet" type="text/css" href="../css/project.css">
+    <link rel="icon" type="image/x-icon" href="../images/Card_New.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <div id="bg">
-    <header class="header">
-            <a class="head"><img src="images/headshot.png" alt="Jason Farnsworth Headshot"/></a>
-            <div class="header-text">
-                <h1 class="name">Jason Farnsworth</h1>
-                <h3 class="tagline">"Jack of All Trades, Master of Some"</h3>
-            </div>
-            
-            
+    <header>
+            <!--<p><a href="index.html">Return to Landing Page</a></p>-->
+            <a href="/"><img class="return" src="../images/return.png" alt="Return Button"></a>
     </header>
 
-    <article class="bg">
-      <p style="text-indent: 30px;">I'm a Computer Science graduate of Randolph College, with minors in Engineering and Data Science. I am working to become a video game designer & developer. I have experience with multiple langauges and programs, as well as founding the Video Game Development Workshop Series, where I teach various aspects of video game design and development and mentor other students on creating their own video games. In my free time, I enjoy playing video games such as <i>Super Smash Bros Ultimate</i>, the <i>OCTOPATH TRAVELER</i> series, various <i>Plants vs. Zombies 2</i> mods, and indie games!</p>
+    <article>
+        <h1 class="center">My Software Development Projects</h1>
+            <p class="center">On this page, you'll find my various Software Development projects. My Github page is where most of my projects exist, but this page also houses some things that aren't on my Github, like research projects.</p>
+            <img class="img" src="HHLogo.png" alt="Harvest Havoc Logo"/>
+            <a href="https://sites.google.com/view/harvesthavoc/home" target="_blank"><h2>Harvest Havoc</h2></a><p>A high-score based, arcade-style game about collecting falling produce while avoiding obstacles!</p>
+            <img class="img" src="Fablelight_Logo.png" alt="Fablelight Logo"/>
+            <a href="https://store.steampowered.com/app/3099620/Fablelight/" target="_blank"><h2>Fablelight</h2></a><p>A single-player, story-driven 2D fighting game with RPG progression. I'm working with Raphael Estrada (<a href="https://jacobrafaelestrada.wixsite.com/super8bitrafa">@super8bitrafa</a>) on character creation and advertising!</p>
+            <img class="img" src="VGDLogo.png" alt="Video Game Development Workshop Series Logo"/>
+            <a href="https://sites.google.com/randolphcollege.edu/randolph-vg-workshop/home" target="_blank"><h2>Randolph College's Video Game Development Workshop Series</h2></a> <p>The landing page for the Video Game Development program I started at Randolph College for students interested in game design and development! </p>
+            <img class="img" src="NPCLogo.png" alt="Picture showing a robot with an arrow to a simple avatar."/>
+            <a href="AI_for_NPCs.pdf" target="_blank"><h2>Using Prompt Engineering to Constrain LLMs for Dynamic NPC Behavior</h2></a><p>My technical report for my Senior Seminar Capstone Project at Randolph College. This project builds off of the work of <a href="https://github.com/joonspk-research/generative_agents"><i><u>Generative Agents: Interactive Simulacra of Human Behavior</u></i></a>, and was worked on in a 7 week period.</p>
+            <img class="img" src="RoomGen.png" alt="Room Generation Process"/>
+            <a href="tech_report.pdf" target="_blank"><h2>3D Room Generation from 2D Semantic Layout</h2></a><p>My technical report for a new process generating 3D rooms from a 2D semantic layout. I worked on this project with <a href="https://engineering.louisville.edu/faculty/rui-yu/">Dr. Rui Yu</a> and Zitong Zhang at the University of Louisville during the 2025 REU Site Summer Research Program.</p>
+            
     </article>
-
-    <h2 class="center">My Socials!</h2>
-    <div class="center">
-        <nav class="acct-button-row">
-        <a href="https://www.linkedin.com/in/jason-farnsworth-randolph/"><img src="images/LinkedInButton.png" alt="Linkedin Button"></a>
-        <!--<a href="https://github.com/Jason-Farnsworth"><img src="images/GHButton.png" alt="Github Button"></a>-->
-        <a href="mailto:jason.r.farnsworth@gmail.com" target="_blank"><img id="email-link" src="images/MailButton.png" alt="Email Button"></a>
-        <a href="https://github.com/Jason-Farnsworth" target="_blank"><img src="images/GithubButton.png" alt="Github Button"></a>
-        <a href="https://www.youtube.com/@JasonFarnsworth2026"><img src="images/YTButton.png" alt="YouTube Button"></a>
-        </nav>
     </div>
-
-    <div id="email-popup" class="popup">
-    <p>
-        If your email client didn't open, you can email me directly at
-        <strong  id="email-address">jason.r.farnsworth@gmail.com</strong>.
-    </p>
-        <div class="popup-button">
-            <button id="copy-email">Copy Email Address</button>
-            <button id="close-popup">Close</button>
-        </div>
-    </div>
-
-    <h2 class="center">Check out my portfolios:</h2>
-    <div class="center">
-        <nav class="portfolio-button-row">
-        <a href="software/"><img src="images/SDButton.png" alt="About Us"></a>
-        <a href="blog/"><img src="images/PBButton.png" alt="About Us"></a>
-        <a href="graphics/"><img src="images/GDButton.png" alt="About Us"></a>
-        </nav>
-    </div>  
-    <script src="js/project.js"></script> 
-</div>
 </body>
 </html>
